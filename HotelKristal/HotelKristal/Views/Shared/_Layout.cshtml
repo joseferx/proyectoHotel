@@ -5,6 +5,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hotel Kristal</title>
+    <link href="~/Content/footer.css" rel="stylesheet" />
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
 
@@ -85,14 +86,51 @@
         </a>
     </div><!-- /.carousel -->
 
+    <!--inician las redes sociales-->
 
+    <div class="sticky-container" style="padding:0px; margin:0px; position:fixed; right:-160px; top:230px; width:210px; z-index: 1100; ">
+        <ul class="sticky" style=" list-style-type:none;  color:#efefef; height:43px; padding:0px; margin:0px 0px 1px 0px; -webkit-transition:all 0.20s ease-in-out; -moz-transition:all 0.20s ease-in-out; -o-transition:all 0.20s ease-in-out; transition:all 0.20s ease-in-out; cursor:pointer;">
+            <li>
+                <img src="~/Imagenes/fb.ico" width="32" height="32">
+                
+                <p><a href="https://www.facebook.com/programacionnet" target="_blank"></a></p>
+            </li>
+            <li>
+                
+                <img src="~/Imagenes/twitter.ico" width="32" height="32">
+                <p><a href="https://twitter.com/noprog" target="_blank"></a></p>
+            </li>
+            <li>
+                <img src="~/Imagenes/google.ico" width="32" height="32">
+                <p><a href="https://plus.google.com/programacionnet" target="_blank"></a></p>
+            </li>
+            <li>
+                
+                <img src="~/Imagenes/LinkedIn.ico" width="32" height="32">
+                <p><a href="https://www.linkedin.com/company/programacionnet" target="_blank"></a></p>
+            </li>
+            <li>
+                <img src="~/Imagenes/youtube.ico" width="32" height="32">
+                <p><a href="http://www.youtube.com/programacionnet" target="_blank"></a></p>
+            </li>
+        </ul>
+    </div>
 
+    <!--finalizan las redes sociales-->
 
     <div class="container body-content">
         @RenderBody()
         <hr />
-        <footer>
-            <p>&copy; @DateTime.Now.Year - Mi aplicación ASP.NET</p>
+        
+        
+
+        <footer style="background: rgba(0,0,0,0.8); box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12); box-sizing: border-box; width: 100%; text-align: left; font: normal 16px sans-serif; padding: 45px 50px; margin-top: 80px; ">
+           
+                
+                    
+                    <p style="color:  #8f9296; font-size: 14px; margin: 0;";>&copy; @DateTime.Now.Year - Mi aplicación ASP.NET</p>
+                    
+                
         </footer>
     </div>
 
